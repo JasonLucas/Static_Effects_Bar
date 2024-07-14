@@ -1,0 +1,3262 @@
+{
+  "schema": "v1",
+  "enabled": true,
+  "name": "Static_Boon_Bar",
+  "pos": [
+    155.0,
+    231.0
+  ],
+  "opacity": 1.0,
+  "anchor": "Center",
+  "layer": 0,
+  "elements": [
+    {
+      "enabled": true,
+      "name": "Boons_Bar",
+      "pos": [
+        0.0,
+        0.0
+      ],
+      "opacity": 1.0,
+      "trigger": {
+        "player": {
+          "combat": true,
+          "specs": [],
+          "mounts": [
+            "None"
+          ]
+        },
+        "map": "Any"
+      },
+      "animation": null,
+      "type": "Group",
+      "members": [
+        {
+          "enabled": true,
+          "name": "Boons",
+          "pos": [
+            0.0,
+            0.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "mounts": []
+            },
+            "map": "Any"
+          },
+          "animation": null,
+          "type": "Group",
+          "members": [
+            {
+              "enabled": true,
+              "name": "Offensive",
+              "pos": [
+                2.0,
+                32.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "IconList",
+              "layout": "Static",
+              "direction": "Right",
+              "size": [
+                30.0,
+                30.0
+              ],
+              "pad": 2.0,
+              "icons": [
+                {
+                  "enabled": true,
+                  "name": "Might",
+                  "buff": {
+                    "id": {
+                      "Single": 740
+                    },
+                    "threshold": "Present"
+                  },
+                  "icon": {
+                    "File": "102852.png"
+                  },
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": false,
+                  "tint": [
+                    1.0,
+                    0.99999,
+                    0.99999,
+                    1.0
+                  ]
+                },
+                {
+                  "enabled": true,
+                  "name": "Fury",
+                  "buff": {
+                    "id": {
+                      "Single": 725
+                    },
+                    "threshold": "Present"
+                  },
+                  "icon": {
+                    "File": "102842.png"
+                  },
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": false,
+                  "tint": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                },
+                {
+                  "enabled": true,
+                  "name": "Quickness",
+                  "buff": {
+                    "id": {
+                      "Single": 1187
+                    },
+                    "threshold": "Present"
+                  },
+                  "icon": {
+                    "File": "1012835.png"
+                  },
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": false,
+                  "tint": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                }
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "Utility",
+              "pos": [
+                104.0,
+                32.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "IconList",
+              "layout": "Static",
+              "direction": "Right",
+              "size": [
+                30.0,
+                30.0
+              ],
+              "pad": 2.0,
+              "icons": [
+                {
+                  "enabled": true,
+                  "name": "Alacrity",
+                  "buff": {
+                    "id": {
+                      "Single": 30328
+                    },
+                    "threshold": "Present"
+                  },
+                  "icon": {
+                    "File": "1938787.png"
+                  },
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": false,
+                  "tint": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                },
+                {
+                  "enabled": true,
+                  "name": "Regen",
+                  "buff": {
+                    "id": {
+                      "Single": 718
+                    },
+                    "threshold": "Present"
+                  },
+                  "icon": {
+                    "File": "102835.png"
+                  },
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": false,
+                  "tint": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                },
+                {
+                  "enabled": true,
+                  "name": "Vigor",
+                  "buff": {
+                    "id": {
+                      "Single": 726
+                    },
+                    "threshold": "Present"
+                  },
+                  "icon": {
+                    "File": "102843.png"
+                  },
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": false,
+                  "tint": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                },
+                {
+                  "enabled": true,
+                  "name": "Swiftness",
+                  "buff": {
+                    "id": {
+                      "Single": 719
+                    },
+                    "threshold": "Present"
+                  },
+                  "icon": {
+                    "File": "102836.png"
+                  },
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": false,
+                  "tint": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                }
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "Defensive",
+              "pos": [
+                237.0,
+                32.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "IconList",
+              "layout": "Static",
+              "direction": "Right",
+              "size": [
+                30.0,
+                30.0
+              ],
+              "pad": 2.0,
+              "icons": [
+                {
+                  "enabled": true,
+                  "name": "Protection",
+                  "buff": {
+                    "id": {
+                      "Single": 717
+                    },
+                    "threshold": "Present"
+                  },
+                  "icon": {
+                    "File": "102834.png"
+                  },
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": false,
+                  "tint": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                },
+                {
+                  "enabled": true,
+                  "name": "Resolution",
+                  "buff": {
+                    "id": {
+                      "Single": 873
+                    },
+                    "threshold": "Present"
+                  },
+                  "icon": {
+                    "File": "2440718.png"
+                  },
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": false,
+                  "tint": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                },
+                {
+                  "enabled": true,
+                  "name": "Aegis",
+                  "buff": {
+                    "id": {
+                      "Single": 743
+                    },
+                    "threshold": "Present"
+                  },
+                  "icon": {
+                    "File": "102854.png"
+                  },
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": false,
+                  "tint": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                },
+                {
+                  "enabled": true,
+                  "name": "Resistance",
+                  "buff": {
+                    "id": {
+                      "Single": 26980
+                    },
+                    "threshold": "Present"
+                  },
+                  "icon": {
+                    "File": "961398.png"
+                  },
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": false,
+                  "tint": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                },
+                {
+                  "enabled": true,
+                  "name": "Stability",
+                  "buff": {
+                    "id": {
+                      "Single": 1122
+                    },
+                    "threshold": "Present"
+                  },
+                  "icon": {
+                    "File": "415959.png"
+                  },
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": false,
+                  "tint": [
+                    1.0,
+                    0.99999,
+                    0.99999,
+                    1.0
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "enabled": true,
+          "name": "Missing_Boons",
+          "pos": [
+            0.0,
+            0.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "mounts": []
+            },
+            "map": "Any"
+          },
+          "animation": null,
+          "type": "Group",
+          "members": [
+            {
+              "enabled": true,
+              "name": "Missing_Offensive",
+              "pos": [
+                2.0,
+                32.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "IconList",
+              "layout": "Static",
+              "direction": "Right",
+              "size": [
+                30.0,
+                30.0
+              ],
+              "pad": 2.0,
+              "icons": [
+                {
+                  "enabled": true,
+                  "name": "Might",
+                  "buff": {
+                    "id": {
+                      "Single": 740
+                    },
+                    "threshold": "Missing"
+                  },
+                  "icon": {
+                    "File": "102852-modified.png"
+                  },
+                  "duration_bar": false,
+                  "duration_text": false,
+                  "stacks_text": false,
+                  "tint": [
+                    1.0,
+                    0.99999,
+                    0.99999,
+                    1.0
+                  ]
+                },
+                {
+                  "enabled": true,
+                  "name": "Fury",
+                  "buff": {
+                    "id": {
+                      "Single": 725
+                    },
+                    "threshold": "Missing"
+                  },
+                  "icon": {
+                    "File": "102842-modified.png"
+                  },
+                  "duration_bar": false,
+                  "duration_text": false,
+                  "stacks_text": false,
+                  "tint": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                },
+                {
+                  "enabled": true,
+                  "name": "Quickness",
+                  "buff": {
+                    "id": {
+                      "Single": 1187
+                    },
+                    "threshold": "Missing"
+                  },
+                  "icon": {
+                    "File": "1012835-modified.png"
+                  },
+                  "duration_bar": false,
+                  "duration_text": false,
+                  "stacks_text": false,
+                  "tint": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                }
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "Missing_Utility",
+              "pos": [
+                104.0,
+                32.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "IconList",
+              "layout": "Static",
+              "direction": "Right",
+              "size": [
+                30.0,
+                30.0
+              ],
+              "pad": 2.0,
+              "icons": [
+                {
+                  "enabled": true,
+                  "name": "Alacrity",
+                  "buff": {
+                    "id": {
+                      "Single": 30328
+                    },
+                    "threshold": "Missing"
+                  },
+                  "icon": {
+                    "File": "1938787-modified.png"
+                  },
+                  "duration_bar": false,
+                  "duration_text": false,
+                  "stacks_text": false,
+                  "tint": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                },
+                {
+                  "enabled": true,
+                  "name": "Regen",
+                  "buff": {
+                    "id": {
+                      "Single": 718
+                    },
+                    "threshold": "Missing"
+                  },
+                  "icon": {
+                    "File": "102835-modified.png"
+                  },
+                  "duration_bar": false,
+                  "duration_text": false,
+                  "stacks_text": false,
+                  "tint": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                },
+                {
+                  "enabled": true,
+                  "name": "Vigor",
+                  "buff": {
+                    "id": {
+                      "Single": 726
+                    },
+                    "threshold": "Missing"
+                  },
+                  "icon": {
+                    "File": "102843-modified.png"
+                  },
+                  "duration_bar": false,
+                  "duration_text": false,
+                  "stacks_text": false,
+                  "tint": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                },
+                {
+                  "enabled": true,
+                  "name": "Swiftness",
+                  "buff": {
+                    "id": {
+                      "Single": 719
+                    },
+                    "threshold": "Missing"
+                  },
+                  "icon": {
+                    "File": "102836-modified.png"
+                  },
+                  "duration_bar": true,
+                  "duration_text": false,
+                  "stacks_text": false,
+                  "tint": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                }
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "Missing_Defensive",
+              "pos": [
+                237.0,
+                32.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "IconList",
+              "layout": "Static",
+              "direction": "Right",
+              "size": [
+                30.0,
+                30.0
+              ],
+              "pad": 2.0,
+              "icons": [
+                {
+                  "enabled": true,
+                  "name": "Protection",
+                  "buff": {
+                    "id": {
+                      "Single": 717
+                    },
+                    "threshold": "Missing"
+                  },
+                  "icon": {
+                    "File": "102834-modified.png"
+                  },
+                  "duration_bar": false,
+                  "duration_text": false,
+                  "stacks_text": false,
+                  "tint": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                },
+                {
+                  "enabled": true,
+                  "name": "Resolution",
+                  "buff": {
+                    "id": {
+                      "Single": 873
+                    },
+                    "threshold": "Missing"
+                  },
+                  "icon": {
+                    "File": "2440718-modified.png"
+                  },
+                  "duration_bar": false,
+                  "duration_text": false,
+                  "stacks_text": false,
+                  "tint": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                },
+                {
+                  "enabled": true,
+                  "name": "Aegis",
+                  "buff": {
+                    "id": {
+                      "Single": 743
+                    },
+                    "threshold": "Missing"
+                  },
+                  "icon": {
+                    "File": "102854-modified.png"
+                  },
+                  "duration_bar": false,
+                  "duration_text": false,
+                  "stacks_text": false,
+                  "tint": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                },
+                {
+                  "enabled": true,
+                  "name": "Resistance",
+                  "buff": {
+                    "id": {
+                      "Single": 26980
+                    },
+                    "threshold": "Missing"
+                  },
+                  "icon": {
+                    "File": "961398-modified.png"
+                  },
+                  "duration_bar": false,
+                  "duration_text": false,
+                  "stacks_text": false,
+                  "tint": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                },
+                {
+                  "enabled": true,
+                  "name": "Stability",
+                  "buff": {
+                    "id": {
+                      "Single": 1122
+                    },
+                    "threshold": "Missing"
+                  },
+                  "icon": {
+                    "File": "415959-modified.png"
+                  },
+                  "duration_bar": false,
+                  "duration_text": false,
+                  "stacks_text": false,
+                  "tint": [
+                    1.0,
+                    0.99999,
+                    0.99999,
+                    1.0
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "enabled": true,
+          "name": "Duration_Text",
+          "pos": [
+            3.0,
+            11.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "mounts": []
+            },
+            "map": "Any"
+          },
+          "animation": null,
+          "type": "Group",
+          "members": [
+            {
+              "enabled": true,
+              "name": "Might_Duration",
+              "pos": [
+                0.0,
+                3.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 740
+                },
+                "threshold": "Present"
+              },
+              "text": "%r",
+              "size": 1.0,
+              "align": "Center",
+              "color": [
+                1.0,
+                0.99999034,
+                0.99999,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            },
+            {
+              "enabled": true,
+              "name": "Fury_Duration",
+              "pos": [
+                32.0,
+                3.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 725
+                },
+                "threshold": "Present"
+              },
+              "text": "%r",
+              "size": 1.0,
+              "align": "Center",
+              "color": [
+                1.0,
+                0.99999034,
+                0.99999,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            },
+            {
+              "enabled": true,
+              "name": "Quickness_Duration",
+              "pos": [
+                64.0,
+                3.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 1187
+                },
+                "threshold": "Present"
+              },
+              "text": "%r",
+              "size": 1.0,
+              "align": "Center",
+              "color": [
+                1.0,
+                0.99999034,
+                0.99999,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            },
+            {
+              "enabled": true,
+              "name": "Alacrity_Duration",
+              "pos": [
+                101.0,
+                3.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 30328
+                },
+                "threshold": "Present"
+              },
+              "text": "%r",
+              "size": 1.0,
+              "align": "Center",
+              "color": [
+                1.0,
+                0.99999034,
+                0.99999,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            },
+            {
+              "enabled": true,
+              "name": "Regen_Duration",
+              "pos": [
+                134.0,
+                3.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 718
+                },
+                "threshold": "Present"
+              },
+              "text": "%r",
+              "size": 1.0,
+              "align": "Center",
+              "color": [
+                1.0,
+                0.99999034,
+                0.99999,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            },
+            {
+              "enabled": true,
+              "name": "Vigor_Duration",
+              "pos": [
+                165.0,
+                3.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 726
+                },
+                "threshold": "Present"
+              },
+              "text": "%r",
+              "size": 1.0,
+              "align": "Center",
+              "color": [
+                1.0,
+                0.99999034,
+                0.99999,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            },
+            {
+              "enabled": true,
+              "name": "Swiftness_Duration",
+              "pos": [
+                198.0,
+                3.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 719
+                },
+                "threshold": "Present"
+              },
+              "text": "%r",
+              "size": 1.0,
+              "align": "Center",
+              "color": [
+                1.0,
+                0.99999034,
+                0.99999,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            },
+            {
+              "enabled": true,
+              "name": "Protection_Duration",
+              "pos": [
+                234.0,
+                3.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 717
+                },
+                "threshold": "Present"
+              },
+              "text": "%r",
+              "size": 1.0,
+              "align": "Center",
+              "color": [
+                1.0,
+                0.99999034,
+                0.99999,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            },
+            {
+              "enabled": true,
+              "name": "Resolution_Duration",
+              "pos": [
+                266.0,
+                3.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 873
+                },
+                "threshold": "Present"
+              },
+              "text": "%r",
+              "size": 1.0,
+              "align": "Center",
+              "color": [
+                1.0,
+                0.99999034,
+                0.99999,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            },
+            {
+              "enabled": true,
+              "name": "Aegis_Duration",
+              "pos": [
+                298.0,
+                3.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 743
+                },
+                "threshold": "Present"
+              },
+              "text": "%r",
+              "size": 1.0,
+              "align": "Center",
+              "color": [
+                1.0,
+                0.99999034,
+                0.99999,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            },
+            {
+              "enabled": true,
+              "name": "Resistence_Duration",
+              "pos": [
+                330.0,
+                3.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 26980
+                },
+                "threshold": "Present"
+              },
+              "text": "%r",
+              "size": 1.0,
+              "align": "Center",
+              "color": [
+                1.0,
+                0.99999034,
+                0.99999,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            },
+            {
+              "enabled": true,
+              "name": "Stability_Duration",
+              "pos": [
+                362.0,
+                3.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 1122
+                },
+                "threshold": "Present"
+              },
+              "text": "%r",
+              "size": 1.0,
+              "align": "Center",
+              "color": [
+                1.0,
+                0.99999034,
+                0.99999,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            }
+          ]
+        },
+        {
+          "enabled": true,
+          "name": "Stack_Text",
+          "pos": [
+            10.0,
+            40.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "mounts": []
+            },
+            "map": "Any"
+          },
+          "animation": null,
+          "type": "Group",
+          "members": [
+            {
+              "enabled": true,
+              "name": "Might_Stack",
+              "pos": [
+                0.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 740
+                },
+                "threshold": "Present"
+              },
+              "text": "%s",
+              "size": 1.1,
+              "align": "Center",
+              "color": [
+                1.0,
+                0.99999034,
+                0.99999,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            },
+            {
+              "enabled": true,
+              "name": "Stability_Stack",
+              "pos": [
+                362.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 1122
+                },
+                "threshold": "Present"
+              },
+              "text": "%s",
+              "size": 1.1,
+              "align": "Center",
+              "color": [
+                1.0,
+                0.99999034,
+                0.99999,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "enabled": true,
+      "name": "Conditions_Bar",
+      "pos": [
+        0.0,
+        66.0
+      ],
+      "opacity": 1.0,
+      "trigger": {
+        "player": {
+          "combat": true,
+          "specs": [],
+          "mounts": [
+            "None"
+          ]
+        },
+        "map": "Any"
+      },
+      "animation": null,
+      "type": "Group",
+      "members": [
+        {
+          "enabled": true,
+          "name": "Conditions",
+          "pos": [
+            0.0,
+            0.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "mounts": []
+            },
+            "map": "Any"
+          },
+          "animation": null,
+          "type": "Group",
+          "members": [
+            {
+              "enabled": true,
+              "name": "Weakness",
+              "pos": [
+                -6.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Icon",
+              "buff": {
+                "id": {
+                  "Single": 742
+                },
+                "threshold": "Present"
+              },
+              "icon": {
+                "File": "weakness_half.png"
+              },
+              "duration_bar": true,
+              "duration_text": false,
+              "stacks_text": false,
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                14.0,
+                30.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "Torment",
+              "pos": [
+                10.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Icon",
+              "buff": {
+                "id": {
+                  "Single": 19426
+                },
+                "threshold": "Present"
+              },
+              "icon": {
+                "File": "torment_half.png"
+              },
+              "duration_bar": true,
+              "duration_text": false,
+              "stacks_text": false,
+              "tint": [
+                1.0,
+                0.99999,
+                0.9999999,
+                1.0
+              ],
+              "size": [
+                15.0,
+                30.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "Blinded",
+              "pos": [
+                34.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Icon",
+              "buff": {
+                "id": {
+                  "Single": 720
+                },
+                "threshold": "Present"
+              },
+              "icon": {
+                "File": "102837.png"
+              },
+              "duration_bar": true,
+              "duration_text": false,
+              "stacks_text": false,
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                30.0,
+                30.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "Slow",
+              "pos": [
+                66.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Icon",
+              "buff": {
+                "id": {
+                  "Single": 26766
+                },
+                "threshold": "Present"
+              },
+              "icon": {
+                "File": "961397.png"
+              },
+              "duration_bar": true,
+              "duration_text": false,
+              "stacks_text": false,
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                30.0,
+                30.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "Chilled",
+              "pos": [
+                104.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Icon",
+              "buff": {
+                "id": {
+                  "Single": 722
+                },
+                "threshold": "Present"
+              },
+              "icon": {
+                "File": "102839.png"
+              },
+              "duration_bar": true,
+              "duration_text": false,
+              "stacks_text": false,
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                30.0,
+                30.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "Poison",
+              "pos": [
+                136.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Icon",
+              "buff": {
+                "id": {
+                  "Single": 723
+                },
+                "threshold": "Present"
+              },
+              "icon": {
+                "File": "102840.png"
+              },
+              "duration_bar": true,
+              "duration_text": false,
+              "stacks_text": false,
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                30.0,
+                30.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "Bleeding",
+              "pos": [
+                168.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Icon",
+              "buff": {
+                "id": {
+                  "Single": 736
+                },
+                "threshold": "Present"
+              },
+              "icon": {
+                "File": "102848.png"
+              },
+              "duration_bar": true,
+              "duration_text": false,
+              "stacks_text": false,
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                30.0,
+                30.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "Crippled",
+              "pos": [
+                200.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Icon",
+              "buff": {
+                "id": {
+                  "Single": 721
+                },
+                "threshold": "Present"
+              },
+              "icon": {
+                "File": "102838.png"
+              },
+              "duration_bar": true,
+              "duration_text": false,
+              "stacks_text": false,
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                30.0,
+                30.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "Vulnerability",
+              "pos": [
+                237.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Icon",
+              "buff": {
+                "id": {
+                  "Single": 738
+                },
+                "threshold": "Present"
+              },
+              "icon": {
+                "File": "102850.png"
+              },
+              "duration_bar": true,
+              "duration_text": false,
+              "stacks_text": false,
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                30.0,
+                30.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "Confusion",
+              "pos": [
+                269.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Icon",
+              "buff": {
+                "id": {
+                  "Single": 861
+                },
+                "threshold": "Present"
+              },
+              "icon": {
+                "File": "102880.png"
+              },
+              "duration_bar": true,
+              "duration_text": false,
+              "stacks_text": false,
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                30.0,
+                30.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "Burning",
+              "pos": [
+                301.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Icon",
+              "buff": {
+                "id": {
+                  "Single": 737
+                },
+                "threshold": "Present"
+              },
+              "icon": {
+                "File": "102849.png"
+              },
+              "duration_bar": true,
+              "duration_text": false,
+              "stacks_text": false,
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                30.0,
+                30.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "Immobilized",
+              "pos": [
+                333.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Icon",
+              "buff": {
+                "id": {
+                  "Single": 727
+                },
+                "threshold": "Present"
+              },
+              "icon": {
+                "File": "102844.png"
+              },
+              "duration_bar": true,
+              "duration_text": false,
+              "stacks_text": false,
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                30.0,
+                30.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "Fear",
+              "pos": [
+                357.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Icon",
+              "buff": {
+                "id": {
+                  "Single": 791
+                },
+                "threshold": "Present"
+              },
+              "icon": {
+                "File": "fear_half.png"
+              },
+              "duration_bar": true,
+              "duration_text": false,
+              "stacks_text": false,
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                14.0,
+                30.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "Taunt",
+              "pos": [
+                373.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Icon",
+              "buff": {
+                "id": {
+                  "Single": 27705
+                },
+                "threshold": "Present"
+              },
+              "icon": {
+                "File": "taunt_half.png"
+              },
+              "duration_bar": true,
+              "duration_text": false,
+              "stacks_text": false,
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                15.0,
+                30.0
+              ]
+            }
+          ]
+        },
+        {
+          "enabled": true,
+          "name": "Missing_Conditions",
+          "pos": [
+            0.0,
+            0.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "mounts": []
+            },
+            "map": "Any"
+          },
+          "animation": null,
+          "type": "Group",
+          "members": [
+            {
+              "enabled": true,
+              "name": "Weakness",
+              "pos": [
+                -6.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Icon",
+              "buff": {
+                "id": {
+                  "Single": 742
+                },
+                "threshold": "Missing"
+              },
+              "icon": {
+                "File": "weakness_half-modified.png"
+              },
+              "duration_bar": true,
+              "duration_text": false,
+              "stacks_text": false,
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                14.0,
+                30.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "Torment",
+              "pos": [
+                10.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Icon",
+              "buff": {
+                "id": {
+                  "Single": 19426
+                },
+                "threshold": "Missing"
+              },
+              "icon": {
+                "File": "torment_half-modified.png"
+              },
+              "duration_bar": true,
+              "duration_text": false,
+              "stacks_text": false,
+              "tint": [
+                1.0,
+                0.99999,
+                0.9999999,
+                1.0
+              ],
+              "size": [
+                15.0,
+                30.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "Blinded",
+              "pos": [
+                34.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Icon",
+              "buff": {
+                "id": {
+                  "Single": 720
+                },
+                "threshold": "Missing"
+              },
+              "icon": {
+                "File": "102837-modified.png"
+              },
+              "duration_bar": true,
+              "duration_text": false,
+              "stacks_text": false,
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                30.0,
+                30.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "Slow",
+              "pos": [
+                66.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Icon",
+              "buff": {
+                "id": {
+                  "Single": 26766
+                },
+                "threshold": "Missing"
+              },
+              "icon": {
+                "File": "961397-modified.png"
+              },
+              "duration_bar": true,
+              "duration_text": false,
+              "stacks_text": false,
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                30.0,
+                30.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "Chilled",
+              "pos": [
+                104.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Icon",
+              "buff": {
+                "id": {
+                  "Single": 722
+                },
+                "threshold": "Missing"
+              },
+              "icon": {
+                "File": "102839-modified.png"
+              },
+              "duration_bar": true,
+              "duration_text": false,
+              "stacks_text": false,
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                30.0,
+                30.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "Poison",
+              "pos": [
+                136.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Icon",
+              "buff": {
+                "id": {
+                  "Single": 723
+                },
+                "threshold": "Missing"
+              },
+              "icon": {
+                "File": "102840-modified.png"
+              },
+              "duration_bar": true,
+              "duration_text": false,
+              "stacks_text": false,
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                30.0,
+                30.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "Bleeding",
+              "pos": [
+                168.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Icon",
+              "buff": {
+                "id": {
+                  "Single": 736
+                },
+                "threshold": "Missing"
+              },
+              "icon": {
+                "File": "102848-modified.png"
+              },
+              "duration_bar": true,
+              "duration_text": false,
+              "stacks_text": false,
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                30.0,
+                30.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "Crippled",
+              "pos": [
+                200.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Icon",
+              "buff": {
+                "id": {
+                  "Single": 721
+                },
+                "threshold": "Missing"
+              },
+              "icon": {
+                "File": "102838-modified.png"
+              },
+              "duration_bar": true,
+              "duration_text": false,
+              "stacks_text": false,
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                30.0,
+                30.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "Vulnerability",
+              "pos": [
+                237.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Icon",
+              "buff": {
+                "id": {
+                  "Single": 738
+                },
+                "threshold": "Missing"
+              },
+              "icon": {
+                "File": "102850-modified.png"
+              },
+              "duration_bar": true,
+              "duration_text": false,
+              "stacks_text": false,
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                30.0,
+                30.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "Confusion",
+              "pos": [
+                269.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Icon",
+              "buff": {
+                "id": {
+                  "Single": 861
+                },
+                "threshold": "Missing"
+              },
+              "icon": {
+                "File": "102880-modified.png"
+              },
+              "duration_bar": true,
+              "duration_text": false,
+              "stacks_text": false,
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                30.0,
+                30.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "Burning",
+              "pos": [
+                301.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Icon",
+              "buff": {
+                "id": {
+                  "Single": 737
+                },
+                "threshold": "Missing"
+              },
+              "icon": {
+                "File": "102849-modified.png"
+              },
+              "duration_bar": true,
+              "duration_text": false,
+              "stacks_text": false,
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                30.0,
+                30.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "Immobilized",
+              "pos": [
+                333.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Icon",
+              "buff": {
+                "id": {
+                  "Single": 727
+                },
+                "threshold": "Missing"
+              },
+              "icon": {
+                "File": "102844-modified.png"
+              },
+              "duration_bar": true,
+              "duration_text": false,
+              "stacks_text": false,
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                30.0,
+                30.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "Fear",
+              "pos": [
+                357.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Icon",
+              "buff": {
+                "id": {
+                  "Single": 791
+                },
+                "threshold": "Missing"
+              },
+              "icon": {
+                "File": "fear_half-modified.png"
+              },
+              "duration_bar": true,
+              "duration_text": false,
+              "stacks_text": false,
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                14.0,
+                30.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "Taunt",
+              "pos": [
+                373.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Icon",
+              "buff": {
+                "id": {
+                  "Single": 27705
+                },
+                "threshold": "Missing"
+              },
+              "icon": {
+                "File": "taunt_half-modified.png"
+              },
+              "duration_bar": true,
+              "duration_text": false,
+              "stacks_text": false,
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "size": [
+                15.0,
+                30.0
+              ]
+            }
+          ]
+        },
+        {
+          "enabled": true,
+          "name": "Stack_text",
+          "pos": [
+            0.0,
+            0.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "mounts": []
+            },
+            "map": "Any"
+          },
+          "animation": null,
+          "type": "Group",
+          "members": [
+            {
+              "enabled": true,
+              "name": "Torment_stack",
+              "pos": [
+                9.0,
+                -8.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 19426
+                },
+                "threshold": "Present"
+              },
+              "text": "%s",
+              "size": 1.0,
+              "align": "Center",
+              "color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            },
+            {
+              "enabled": true,
+              "name": "Poison_stack",
+              "pos": [
+                142.0,
+                -8.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 19426
+                },
+                "threshold": "Present"
+              },
+              "text": "%s",
+              "size": 1.0,
+              "align": "Center",
+              "color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            },
+            {
+              "enabled": true,
+              "name": "Bleeding_stack",
+              "pos": [
+                174.0,
+                -8.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 19426
+                },
+                "threshold": "Present"
+              },
+              "text": "%s",
+              "size": 1.0,
+              "align": "Center",
+              "color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            },
+            {
+              "enabled": true,
+              "name": "Vulnerability_stack",
+              "pos": [
+                242.0,
+                -8.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 19426
+                },
+                "threshold": "Present"
+              },
+              "text": "%s",
+              "size": 1.0,
+              "align": "Center",
+              "color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            },
+            {
+              "enabled": true,
+              "name": "Confusion_stack",
+              "pos": [
+                274.0,
+                -8.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 19426
+                },
+                "threshold": "Present"
+              },
+              "text": "%s",
+              "size": 1.0,
+              "align": "Center",
+              "color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            },
+            {
+              "enabled": true,
+              "name": "Burning_stack",
+              "pos": [
+                306.0,
+                -8.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 19426
+                },
+                "threshold": "Present"
+              },
+              "text": "%s",
+              "size": 1.0,
+              "align": "Center",
+              "color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            }
+          ]
+        },
+        {
+          "enabled": true,
+          "name": "Duration_text",
+          "pos": [
+            0.0,
+            0.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "mounts": []
+            },
+            "map": "Any"
+          },
+          "animation": null,
+          "type": "Group",
+          "members": [
+            {
+              "enabled": true,
+              "name": "Weakness_Duration",
+              "pos": [
+                -9.0,
+                8.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 742
+                },
+                "threshold": "Present"
+              },
+              "text": "%r",
+              "size": 0.9,
+              "align": "Center",
+              "color": [
+                1.0,
+                0.99999034,
+                0.99999,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            },
+            {
+              "enabled": true,
+              "name": "Torment_Duration",
+              "pos": [
+                12.0,
+                8.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 19426
+                },
+                "threshold": "Present"
+              },
+              "text": "%r",
+              "size": 0.9,
+              "align": "Center",
+              "color": [
+                1.0,
+                0.99999034,
+                0.99999,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            },
+            {
+              "enabled": true,
+              "name": "Blinded_Duration",
+              "pos": [
+                35.0,
+                8.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 720
+                },
+                "threshold": "Present"
+              },
+              "text": "%r",
+              "size": 0.9,
+              "align": "Center",
+              "color": [
+                1.0,
+                0.99999034,
+                0.99999,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            },
+            {
+              "enabled": true,
+              "name": "Slow_Duration",
+              "pos": [
+                67.0,
+                8.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 26766
+                },
+                "threshold": "Present"
+              },
+              "text": "%r",
+              "size": 0.9,
+              "align": "Center",
+              "color": [
+                1.0,
+                0.99999034,
+                0.99999,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            },
+            {
+              "enabled": true,
+              "name": "Chilled_Duration",
+              "pos": [
+                105.0,
+                8.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 722
+                },
+                "threshold": "Present"
+              },
+              "text": "%r",
+              "size": 0.9,
+              "align": "Center",
+              "color": [
+                1.0,
+                0.99999034,
+                0.99999,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            },
+            {
+              "enabled": true,
+              "name": "Poison_Duration",
+              "pos": [
+                137.0,
+                8.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 723
+                },
+                "threshold": "Present"
+              },
+              "text": "%r",
+              "size": 0.9,
+              "align": "Center",
+              "color": [
+                1.0,
+                0.99999034,
+                0.99999,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            },
+            {
+              "enabled": true,
+              "name": "Bleeding_Duration",
+              "pos": [
+                169.0,
+                8.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 736
+                },
+                "threshold": "Present"
+              },
+              "text": "%r",
+              "size": 0.9,
+              "align": "Center",
+              "color": [
+                1.0,
+                0.99999034,
+                0.99999,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            },
+            {
+              "enabled": true,
+              "name": "Crippled_Duration",
+              "pos": [
+                201.0,
+                8.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 721
+                },
+                "threshold": "Present"
+              },
+              "text": "%r",
+              "size": 0.9,
+              "align": "Center",
+              "color": [
+                1.0,
+                0.99999034,
+                0.99999,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            },
+            {
+              "enabled": true,
+              "name": "Vulnerability_Duration",
+              "pos": [
+                238.0,
+                8.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 738
+                },
+                "threshold": "Present"
+              },
+              "text": "%r",
+              "size": 0.9,
+              "align": "Center",
+              "color": [
+                1.0,
+                0.99999034,
+                0.99999,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            },
+            {
+              "enabled": true,
+              "name": "Confusion_Duration",
+              "pos": [
+                270.0,
+                8.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 861
+                },
+                "threshold": "Present"
+              },
+              "text": "%r",
+              "size": 0.9,
+              "align": "Center",
+              "color": [
+                1.0,
+                0.99999034,
+                0.99999,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            },
+            {
+              "enabled": true,
+              "name": "Burning_Duration",
+              "pos": [
+                302.0,
+                8.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 737
+                },
+                "threshold": "Present"
+              },
+              "text": "%r",
+              "size": 0.9,
+              "align": "Center",
+              "color": [
+                1.0,
+                0.99999034,
+                0.99999,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            },
+            {
+              "enabled": true,
+              "name": "Immobilized_Duration",
+              "pos": [
+                334.0,
+                8.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 727
+                },
+                "threshold": "Present"
+              },
+              "text": "%r",
+              "size": 0.9,
+              "align": "Center",
+              "color": [
+                1.0,
+                0.99999034,
+                0.99999,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            },
+            {
+              "enabled": true,
+              "name": "Fear_Duration",
+              "pos": [
+                358.0,
+                8.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 791
+                },
+                "threshold": "Present"
+              },
+              "text": "%r",
+              "size": 0.9,
+              "align": "Center",
+              "color": [
+                1.0,
+                0.99999034,
+                0.99999,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            },
+            {
+              "enabled": true,
+              "name": "Taunt_Duration",
+              "pos": [
+                377.0,
+                8.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "mounts": []
+                },
+                "map": "Any"
+              },
+              "animation": null,
+              "type": "Text",
+              "buff": {
+                "id": {
+                  "Single": 27705
+                },
+                "threshold": "Present"
+              },
+              "text": "%r",
+              "size": 0.9,
+              "align": "Center",
+              "color": [
+                1.0,
+                0.99999034,
+                0.99999,
+                1.0
+              ],
+              "decoration": "OutlineDouble"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
