@@ -1,10 +1,10 @@
 {
   "schema": "v1",
   "enabled": true,
-  "name": "Static_Boon_Bar_V2",
+  "name": "Static_Boon_Bar",
   "pos": [
-    0.0,
-    0.0
+    64.0,
+    340.0
   ],
   "opacity": 1.0,
   "anchor": "Center",
@@ -50,7 +50,7 @@
           "members": [
             {
               "enabled": true,
-              "name": "Might_Present",
+              "name": "Icons_Fillbar",
               "pos": [
                 0.0,
                 0.0
@@ -65,122 +65,143 @@
                 "map": "Any"
               },
               "animation": null,
-              "type": "Icon",
-              "buff": {
-                "id": {
-                  "Single": 740
+              "type": "Group",
+              "members": [
+                {
+                  "enabled": true,
+                  "name": "Might_Present",
+                  "pos": [
+                    0.0,
+                    0.0
+                  ],
+                  "opacity": 1.0,
+                  "trigger": {
+                    "player": {
+                      "combat": null,
+                      "specs": [],
+                      "mounts": []
+                    },
+                    "map": "Any"
+                  },
+                  "animation": null,
+                  "type": "Icon",
+                  "buff": {
+                    "id": {
+                      "Single": 740
+                    },
+                    "threshold": "Present"
+                  },
+                  "icon": {
+                    "Url": "https://raw.githubusercontent.com/JasonLucas/Static_Effects_Bar/main/icons/b_740_might.png"
+                  },
+                  "duration_bar": false,
+                  "duration_text": false,
+                  "stacks_text": false,
+                  "tint": [
+                    1.0,
+                    0.99999,
+                    0.99999,
+                    1.0
+                  ],
+                  "size": [
+                    32.0,
+                    32.0
+                  ]
                 },
-                "threshold": "Present"
-              },
-              "icon": {
-                "Url": "https://raw.githubusercontent.com/JasonLucas/Static_Effects_Bar/main/icons/b_740_might.png"
-              },
-              "duration_bar": false,
-              "duration_text": false,
-              "stacks_text": false,
-              "tint": [
-                1.0,
-                0.99999,
-                0.99999,
-                1.0
-              ],
-              "size": [
-                32.0,
-                32.0
-              ]
-            },
-            {
-              "enabled": true,
-              "name": "Might_Duration_Bar",
-              "pos": [
-                0.0,
-                4.0
-              ],
-              "opacity": 0.35279998,
-              "trigger": {
-                "player": {
-                  "combat": null,
-                  "specs": [],
-                  "mounts": []
+                {
+                  "enabled": true,
+                  "name": "Might_Duration_Bar",
+                  "pos": [
+                    0.0,
+                    4.0
+                  ],
+                  "opacity": 0.35279998,
+                  "trigger": {
+                    "player": {
+                      "combat": null,
+                      "specs": [],
+                      "mounts": []
+                    },
+                    "map": "Any"
+                  },
+                  "animation": null,
+                  "type": "Bar",
+                  "buff": {
+                    "id": {
+                      "Single": 740
+                    },
+                    "threshold": "Present"
+                  },
+                  "progress": "Duration",
+                  "max": 25,
+                  "size": [
+                    26.0,
+                    24.0
+                  ],
+                  "align": "Center",
+                  "direction": "Up",
+                  "fill": [
+                    0.0,
+                    1.0,
+                    0.0,
+                    1.0
+                  ],
+                  "background": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "border": false,
+                  "border_size": 1.0,
+                  "border_color": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
                 },
-                "map": "Any"
-              },
-              "animation": null,
-              "type": "Bar",
-              "buff": {
-                "id": {
-                  "Single": 740
-                },
-                "threshold": "Present"
-              },
-              "progress": "Duration",
-              "max": 25,
-              "size": [
-                26.0,
-                24.0
-              ],
-              "align": "Center",
-              "direction": "Up",
-              "fill": [
-                0.0,
-                1.0,
-                0.0,
-                1.0
-              ],
-              "background": [
-                0.0,
-                0.0,
-                0.0,
-                0.0
-              ],
-              "border": false,
-              "border_size": 1.0,
-              "border_color": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-              ]
-            },
-            {
-              "enabled": true,
-              "name": "Might_Missing",
-              "pos": [
-                0.0,
-                0.0
-              ],
-              "opacity": 1.0,
-              "trigger": {
-                "player": {
-                  "combat": null,
-                  "specs": [],
-                  "mounts": []
-                },
-                "map": "Any"
-              },
-              "animation": null,
-              "type": "Icon",
-              "buff": {
-                "id": {
-                  "Single": 740
-                },
-                "threshold": "Missing"
-              },
-              "icon": {
-                "Url": "https://raw.githubusercontent.com/JasonLucas/Static_Effects_Bar/main/icons/b_740_might_bw.png"
-              },
-              "duration_bar": false,
-              "duration_text": false,
-              "stacks_text": false,
-              "tint": [
-                1.0,
-                1.0,
-                1.0,
-                1.0
-              ],
-              "size": [
-                32.0,
-                32.0
+                {
+                  "enabled": true,
+                  "name": "Might_Missing",
+                  "pos": [
+                    0.0,
+                    0.0
+                  ],
+                  "opacity": 1.0,
+                  "trigger": {
+                    "player": {
+                      "combat": null,
+                      "specs": [],
+                      "mounts": []
+                    },
+                    "map": "Any"
+                  },
+                  "animation": null,
+                  "type": "Icon",
+                  "buff": {
+                    "id": {
+                      "Single": 740
+                    },
+                    "threshold": "Missing"
+                  },
+                  "icon": {
+                    "Url": "https://raw.githubusercontent.com/JasonLucas/Static_Effects_Bar/main/icons/b_740_might_bw.png"
+                  },
+                  "duration_bar": false,
+                  "duration_text": false,
+                  "stacks_text": false,
+                  "tint": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "size": [
+                    32.0,
+                    32.0
+                  ]
+                }
               ]
             },
             {
